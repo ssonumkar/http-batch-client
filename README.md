@@ -20,3 +20,7 @@ cd http-batch-client
 chmod +x run-app.sh
 ./run-app.sh
 ```
+### 3. Pass the command line arguments to configure the Parallel Request Count, Total Requests, URL
+````bash
+go run main.go -url https://api.example.com/health -parallel 20 - count 200
+````
