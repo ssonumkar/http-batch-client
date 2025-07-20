@@ -4,13 +4,6 @@
 
 echo "== Checking Environment for Golang =="
 
-# Check Go installation
-if ! command -v go &> /dev/null; then
-  echo "Install Go"
-else
-  echo "Go found: $(go version)"
-fi
-
 echo "== Preparing Go Modules =="
 go mod tidy 
 
