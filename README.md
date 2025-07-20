@@ -15,12 +15,8 @@ git clone <repository-url>
 cd http-batch-client
 ```
 
-### 2. Build the application
+### 2. Build and Run the application
 ```bash
-go build
-```
-
-### 3. Run the application 
-```bash
-go run main.go -url https://api.example.com/health -parallel 5 -count 50
+chmod +x run-app.sh
+./run-app.sh
 ```
