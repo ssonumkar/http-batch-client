@@ -20,7 +20,8 @@ cd http-batch-client
 chmod +x run-app.sh
 ./run-app.sh
 ```
-### 3. Pass the command line arguments to configure the Parallel Request Count, Total Requests, URL
+### 3. Optionally run using Docker 
 ````bash
-go run main.go -url https://api.example.com/health -parallel 20 - count 200
+docker build -t go-client .
+docker run --rm go-client -url http://localhost:8080/health -parallel 20 -count 200
 ````
